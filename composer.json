@@ -1,0 +1,48 @@
+{
+    "name": "peterdekok/router",
+    "description": "Simple PHP request router",
+    "homepage": "https://peterdekok.nl/",
+    "keywords": [
+        "peterdekok",
+        "router",
+        "routing",
+        "route",
+        "url",
+        "path"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Peter de Kok",
+            "email": "info@peterdekok.nl",
+            "homepage": "https://peterdekok.nl/"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3",
+        "phpunit/phpunit": "^8.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "PeterDeKok\\Router\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PeterDeKok\\Router\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
